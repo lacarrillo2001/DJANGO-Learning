@@ -1,0 +1,50 @@
+nav{
+    background-color: lightblue;
+
+    text-align: center;
+}
+h1{
+    color: blue;
+    text-align: center;
+
+}
+
+ul{
+    list-style-type: square;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 250px;
+    margin: auto;
+    display: flex;
+}
+ul li{
+    margin: 10px 0;
+    padding: 20px;
+}
+
+li a {
+   text-decoration: none;
+   font-size: 20px;
+    color: black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 85vh;
+
+}
+
+footer{
+    background-color: lightblue;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}

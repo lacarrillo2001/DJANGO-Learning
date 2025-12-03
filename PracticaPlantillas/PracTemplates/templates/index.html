@@ -1,0 +1,49 @@
+{% extends './layouts/base.html'%}
+{% load static %}
+
+{% block contend %}
+
+<h1 class="text-3xl font-bold hg-1 mt-10 text-center">
+         Pedro Piedra el fografo de las montañas
+     </h1>
+
+
+     <div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-white shadow-lg rounded-xl max-w-4xl mx-auto mt-10">
+
+        <!-- Imagen -->
+        <img 
+            src="{% static 'img/montanas7.jpg' %}"
+            alt="Descripción"
+            class="w-60 h-60 object-cover rounded-lg shadow-md"
+        />
+
+        <!-- Párrafo -->
+        <p class="text-gray-700 text-lg leading-relaxed">
+            Este es un ejemplo de un párrafo colocado al lado de una imagen usando TailwindCSS. 
+            Gracias al uso de <span class="font-semibold">flexbox</span> y clases responsivas, 
+            el diseño se adapta automáticamente en pantallas pequeñas colocando los elementos uno 
+            debajo del otro, mientras que en pantallas medianas o grandes se muestran lado a lado.
+        </p>
+
+        </div>
+
+         <div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-white shadow-lg rounded-xl max-w-4xl mx-auto mt-10">
+
+        <!-- Imagen -->
+        <img 
+            src="{% static 'img/montanas8.jpg' %}"
+            alt="Descripción"
+            class="w-60 h-60 object-cover rounded-lg shadow-md"
+        />
+
+        <!-- Párrafo -->
+        <p class="text-gray-700 text-lg leading-relaxed">
+            Este es un ejemplo de un párrafo colocado al lado de una imagen usando TailwindCSS. 
+            Gracias al uso de <span class="font-semibold">flexbox</span> y clases responsivas, 
+            el diseño se adapta automáticamente en pantallas pequeñas colocando los elementos uno 
+            debajo del otro, mientras que en pantallas medianas o grandes se muestran lado a lado.
+        </p>
+
+        </div>
+
+{% endblock %}

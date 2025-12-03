@@ -1,0 +1,25 @@
+///Para inicializar en proyecto//
+
+python -m venv env
+
+// Para activar el entorno virtual
+
+.\env\Scripts\activate
+
+//Instalar django
+pip install django
+
+//ver la version instalada(confirmar su instalacion)`
+
+django-admin --version
+
+//crear el proyecto en la carpeta actual
+
+django-admin startproject <namepoject> .
+
+//correr el servidor de desarrollo
+
+python manage.py runserver
+
+//migrar simple la base de datos cada ves 
+quese cambia de estructura

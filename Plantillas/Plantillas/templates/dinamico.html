@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Simple Django Template -->
+    <h1>Hola {{name}}, esta es una plantilla simple en Django!</h1>
+    <h2>Categorías:</h2>
+    <ul>
+        <!-- Bucles y condiciones for and if -->
+         {#estos comentarios no que muestran en el browser#}
+         {% comment %}
+
+            Bucles y condiciones
+
+            {% for item in lista %}
+                {% if condicion %}
+                    ...
+                {% else %}
+                    ...
+                {% endif %}
+            {% endfor %}
+
+         {% endcomment %}
+
+        {%for category in categories %}
+        
+            {%if category == 'Tech' %}
+            <li> <b>{{category|upper}}</b></li>
+            {%else %}
+            <li>{{category}}</li>
+            {%endif%}
+
+        {%endfor%}
+
+        <h5>total de categorias {{categories|length}}</h5>
+
+    </ul>
+
+</body>
+</html>

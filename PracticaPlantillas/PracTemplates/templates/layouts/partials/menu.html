@@ -1,0 +1,50 @@
+  {% comment %}   <nav>
+        <ul>
+             <li><a href={% url "index" %}>Inicio</a> </li>
+             <li><a href={% url "porfolio" %}>Porfolio</a> </li>
+           <li><a href={% url "herencia" %}>Herencias</a> </li>
+            <li><a href={% url "ejemplo" %}>Ejemplo</a> </li>
+            <li><a href={% url "otra" %}>Otra</a> </li>
+        
+        </ul>
+    </nav> {% endcomment %}
+
+      <!-- NAVBAR -->
+{% load static %} {# Carga la etiqueta static para usar archivos estáticos #}
+  <nav class="bg-blue-500 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        
+        <!-- Logo -->
+        <div class="text-white font-bold text-2xl">
+          
+          <a href="{% url "index" %}">
+            <img src="{% static 'img/fotografo.png' %}" alt="Logo" class="inline-block h-8 w-8 ml-2">
+           </a>
+          <a href="{% url "index" %}">Mi Sitio</a>
+        </div>
+
+        <!-- Links -->
+        <ul class="hidden md:flex space-x-6 text-white text-lg">
+          <li><a href="{% url "index" %}" class="hover:text-blue-200 transition">Index</a></li>
+          <li><a href="{% url "porfolio" %}" class="hover:text-blue-200 transition">Porfolio</a></li>
+        </ul>
+
+        <!-- Menú Móvil (Hamburguesa) -->
+        <div class="md:hidden">
+          <button id="btnMenu" class="text-white focus:outline-none text-3xl">
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú móvil oculto -->
+      <ul id="menuMovil" class="hidden flex-col space-y-3 pb-4 text-white text-lg md:hidden">
+        <li><a href="#" class="hover:text-blue-200 block">Inicio</a></li>
+        <li><a href="#" class="hover:text-blue-200 block">Servicios</a></li>
+        <li><a href="#" class="hover:text-blue-200 block">Productos</a></li>
+        <li><a href="#" class="hover:text-blue-200 block">Contacto</a></li>
+      </ul>
+
+    </div>
+  </nav>
